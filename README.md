@@ -92,9 +92,9 @@ Ambil Biaya Pengiriman untuk pro
 ```php
 $data = RajaOngkir\RajaOngkir::Cost([
     	'origin' 	        => $origin, // id kota asal
-        'originType'            => $origin_type,
+        'originType'            => 'city',
         'destination'           => $destination, // id kota tujuan
-        'destinationType'       => $destination_type,
+        'destinationType'       => 'subdistrict',
     	'weight' 		=> $weight, // berat satuan gram
     	'courier' 		=> $courier, // kode kurir pengantar ( jne / tiki / pos )
     ])->get();
