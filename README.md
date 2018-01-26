@@ -76,7 +76,7 @@ $data = RajaOngkir\RajaOngkir::Kecamatan()->search('subdistrict_name', $name = "
 ```
 Ambil data kecataman berdasarkan id kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kecamatan()->byCity($city_id);
+$data = RajaOngkir\RajaOngkir::Kecamatan()->byCity($city_id)->get();
 ```
 
 Ambil Biaya Pengiriman untuk starter
