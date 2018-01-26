@@ -10,6 +10,11 @@
             "name": "Ahmad Rizal Afani",
             "email": "ahmadrizalafani@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Wahyu Andi Rejeki",
+            "email": "wahyuandi840@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {},
