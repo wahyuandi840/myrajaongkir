@@ -1,6 +1,6 @@
 # rajaongkir API PHP
 
-API ini digunakan ( baru tersedia ) untuk type akun starter
+API ini digunakan  untuk type akun starter,pro 
 
 **Penggunaan**
 
@@ -66,8 +66,20 @@ Ambil data kota berdasarkan nama kota di suatu provinsi
 ```php
 $data = RajaOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
 ```
+Ambil data Kecamatan
+```php
+$data = RajaOngkir\RajaOngkir::Kecamatan()->all();
+```
+Ambil data Kecamatan berdasarkan nama kecamatan
+```php
+$data = RajaOngkir\RajaOngkir::Kecamatan()->search('subdistrict_name', $name = "kranggan")->get();;
+```
+Ambil data kecataman berdasarkan id kota
+```php
+$data = RajaOngkir\RajaOngkir::Kecamatan()->byCity($city_id);
+```
 
-Ambil Biaya Pengiriman
+Ambil Biaya Pengiriman untuk starter
 ```php
 $data = RajaOngkir\RajaOngkir::Cost([
 	'origin' 		=> 501, // id kota asal
@@ -76,8 +88,19 @@ $data = RajaOngkir\RajaOngkir::Cost([
 	'courier' 		=> 'jne', // kode kurir pengantar ( jne / tiki / pos )
 ])->get();
 ```
-
+Ambil Biaya Pengiriman untuk pro
+```php
+$data = RajaOngkir\RajaOngkir::Cost([
+    	'origin' 	        => $origin, // id kota asal
+        'originType'            => $origin_type,
+        'destination'           => $destination, // id kota tujuan
+        'destinationType'       => $destination_type,
+    	'weight' 		=> $weight, // berat satuan gram
+    	'courier' 		=> $courier, // kode kurir pengantar ( jne / tiki / pos )
+    ])->get();
+```
 
 Kunjungi [rajaongkir](http://rajaongkir.com/)
 
 Documentasi akun [starter](http://rajaongkir.com/dokumentasi/starter)
+Documentasi akun [pro](http://rajaongkir.com/dokumentasi/pro)
