@@ -6,7 +6,7 @@ API ini digunakan  untuk type akun starter dan pro
 
 Download package dengan composer
 ```
-composer require wahyuandi840/rajaongkir
+composer require wahyuandi840/myrajaongkir
 ```
 atau
 ```
@@ -17,7 +17,7 @@ atau
 }
 ```
 
-Modifikasi file Api.php di vendor/wahyuandi840/rajaongkir/src/App/Api.php baris ke 11
+Modifikasi file Api.php di vendor/wahyuandi840/myrajaongkir/src/App/Api.php baris ke 11
 ```php
 protected $apiKey = 'isi_api_key_anda_disini';
 ```
@@ -29,59 +29,59 @@ include 'vendor/autoload.php';
 
 Ambil data provinsi
 ```php
-$data = MyOngkir\RajaOngkir::Provinsi()->all();
+$data = MyRajaOngkir\MyRajaOngkir::Provinsi()->all();
 ```
 
 Ambil data provinsi berdasarkan id provinsi
 ```php
-$data = MyOngkir\RajaOngkir::Provinsi()->find($id);
+$data = MyRajaOngkir\MyRajaOngkir::Provinsi()->find($id);
 ```
 
 Ambil data provinsi berdasarkan nama provinsi
 ```php
-$data = MyOngkir\RajaOngkir::Provinsi()->search('province', $name = "ja")->get();
+$data = MyRajaOngkir\MyRajaOngkir::Provinsi()->search('province', $name = "ja")->get();
 ```
 
 Ambil data kota
 ```php
-$data = MyOngkir\RajaOngkir::Kota()->all();
+$data = MyRajaOngkir\MyRajaOngkir::Kota()->all();
 ```
 
 Ambil data kota berdasarkan id kota
 ```php
-$data = MyOngkir\RajaOngkir::Kota()->find($id);
+$data = MyRajaOngkir\MyRajaOngkir::Kota()->find($id);
 ```
 
 Ambil data kota berdasarkan nama kota
 ```php
-$data = MyOngkir\RajaOngkir::Kota()->search('city_name', $name = "banyu")->get();
+$data = MyRajaOngkir\MyRajaOngkir::Kota()->search('city_name', $name = "banyu")->get();
 ```
 
 Ambil data kota berdasarkan provinsi
 ```php
-$data = MyOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->get();
+$data = MyRajaOngkir\MyRajaOngkir::Kota()->byProvinsi($provinsi_id)->get();
 ```
 
 Ambil data kota berdasarkan nama kota di suatu provinsi
 ```php
-$data = MyOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
+$data = MyRajaOngkir\MyRajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
 ```
 Ambil data Kecamatan
 ```php
-$data = MyOngkir\RajaOngkir::Kecamatan()->all();
+$data = MyRajaOngkir\MyRajaOngkir::Kecamatan()->all();
 ```
 Ambil data Kecamatan berdasarkan nama kecamatan
 ```php
-$data = MyOngkir\RajaOngkir::Kecamatan()->search('subdistrict_name', $name = "kranggan")->get();;
+$data = MyRajaOngkir\MyRajaOngkir::Kecamatan()->search('subdistrict_name', $name = "kranggan")->get();;
 ```
 Ambil data kecataman berdasarkan id kota
 ```php
-$data = MyOngkir\RajaOngkir::Kecamatan()->byCity($city_id)->get();
+$data = MyRajaOngkir\MyRajaOngkir::Kecamatan()->byCity($city_id)->get();
 ```
 
 Ambil Biaya Pengiriman untuk starter
 ```php
-$data = MyOngkir\RajaOngkir::Cost([
+$data = MyRajaOngkir\MyRajaOngkir::Cost([
 	'origin' 		=> 501, // id kota asal
 	'destination' 	=> 114, // id kota tujuan
 	'weight' 		=> 1700, // berat satuan gram
@@ -90,7 +90,7 @@ $data = MyOngkir\RajaOngkir::Cost([
 ```
 Ambil Biaya Pengiriman untuk pro
 ```php
-$data = MyOngkir\RajaOngkir::Cost([
+$data = MyRajaOngkir\MyRajaOngkir::Cost([
     	'origin' 	        => $origin, // id kota asal
         'originType'            => 'city',
         'destination'           => $destination, // id kota tujuan
