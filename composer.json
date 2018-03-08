@@ -1,5 +1,5 @@
 {
-    "name": "wahyuandi840/rajaongkir",
+    "name": "wahyuandi840/myrajaongkir",
     "description": "Raja Ongkir API PHP Untuk Akun Starter Dan Akun Pro",
     "keywords": [
         "rajaongkir", "application programming interface","Api Raja Ongkir Pro","Akun Raja Ongkir Starter"
@@ -15,7 +15,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "MyOngkir\\": "src"
+            "MyRajaOngkir\\": "src"
         }
     }
 }
