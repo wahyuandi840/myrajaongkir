@@ -1,6 +1,6 @@
 # rajaongkir API PHP
 
-API ini digunakan  untuk type akun starter,pro 
+API ini digunakan  untuk type akun starter dan pro 
 
 **Penggunaan**
 
