@@ -6,7 +6,7 @@ API ini digunakan  untuk type akun starter,pro
 
 Download package dengan composer
 ```
-composer require rizalafani/rajaongkir
+composer require wahyuandi840/rajaongkir
 ```
 atau
 ```
@@ -17,7 +17,7 @@ atau
 }
 ```
 
-Modifikasi file Api.php di vendor/rizalafani/rajaongkir/src/App/Api.php baris ke 11
+Modifikasi file Api.php di vendor/wahyuandi840/rajaongkir/src/App/Api.php baris ke 11
 ```php
 protected $apiKey = 'isi_api_key_anda_disini';
 ```
