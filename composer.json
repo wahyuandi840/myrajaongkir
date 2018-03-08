@@ -1,20 +1,20 @@
 {
     "name": "wahyuandi840/rajaongkir",
-    "description": "Raja Ongkir API PHP",
+    "description": "Raja Ongkir API PHP Untuk Akun Starter Dan Akun Pro",
     "keywords": [
         "rajaongkir", "application programming interface"
     ],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Ahmad Rizal Afani",
-            "email": "ahmadrizalafani@gmail.com",
-            "role": "Developer"
-        },
+    "authors": [  
         {
             "name": "Wahyu Andi Rejeki",
             "email": "wahyuandi840@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Ahmad Rizal Afani",
+            "email": "ahmadrizalafani@gmail.com",
+            "role": "owner"
         }
     ],
     "require": {},
