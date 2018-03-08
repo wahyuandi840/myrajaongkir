@@ -12,7 +12,7 @@ atau
 ```
 {
 	"require": {
-		"wahyuandi840/rajaongkir" : "dev-master"
+		"wahyuandi840/myrajaongkir" : "dev-master"
 	}
 }
 ```
