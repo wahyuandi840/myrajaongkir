@@ -29,59 +29,59 @@ include 'vendor/autoload.php';
 
 Ambil data provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->all();
+$data = MyOngkir\RajaOngkir::Provinsi()->all();
 ```
 
 Ambil data provinsi berdasarkan id provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->find($id);
+$data = MyOngkir\RajaOngkir::Provinsi()->find($id);
 ```
 
 Ambil data provinsi berdasarkan nama provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->search('province', $name = "ja")->get();
+$data = MyOngkir\RajaOngkir::Provinsi()->search('province', $name = "ja")->get();
 ```
 
 Ambil data kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->all();
+$data = MyOngkir\RajaOngkir::Kota()->all();
 ```
 
 Ambil data kota berdasarkan id kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->find($id);
+$data = MyOngkir\RajaOngkir::Kota()->find($id);
 ```
 
 Ambil data kota berdasarkan nama kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->search('city_name', $name = "banyu")->get();
+$data = MyOngkir\RajaOngkir::Kota()->search('city_name', $name = "banyu")->get();
 ```
 
 Ambil data kota berdasarkan provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->get();
+$data = MyOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->get();
 ```
 
 Ambil data kota berdasarkan nama kota di suatu provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
+$data = MyOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
 ```
 Ambil data Kecamatan
 ```php
-$data = RajaOngkir\RajaOngkir::Kecamatan()->all();
+$data = MyOngkir\RajaOngkir::Kecamatan()->all();
 ```
 Ambil data Kecamatan berdasarkan nama kecamatan
 ```php
-$data = RajaOngkir\RajaOngkir::Kecamatan()->search('subdistrict_name', $name = "kranggan")->get();;
+$data = MyOngkir\RajaOngkir::Kecamatan()->search('subdistrict_name', $name = "kranggan")->get();;
 ```
 Ambil data kecataman berdasarkan id kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kecamatan()->byCity($city_id)->get();
+$data = MyOngkir\RajaOngkir::Kecamatan()->byCity($city_id)->get();
 ```
 
 Ambil Biaya Pengiriman untuk starter
 ```php
-$data = RajaOngkir\RajaOngkir::Cost([
+$data = MyOngkir\RajaOngkir::Cost([
 	'origin' 		=> 501, // id kota asal
 	'destination' 	=> 114, // id kota tujuan
 	'weight' 		=> 1700, // berat satuan gram
@@ -90,7 +90,7 @@ $data = RajaOngkir\RajaOngkir::Cost([
 ```
 Ambil Biaya Pengiriman untuk pro
 ```php
-$data = RajaOngkir\RajaOngkir::Cost([
+$data = MyOngkir\RajaOngkir::Cost([
     	'origin' 	        => $origin, // id kota asal
         'originType'            => 'city',
         'destination'           => $destination, // id kota tujuan
