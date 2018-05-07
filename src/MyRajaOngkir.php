@@ -11,7 +11,7 @@ class MyRajaOngkir {
 	/* Singleton */
 	protected static function GetInstance(){
 		if( self::$obj == null ){
-			self::$obj = new RajaOngkir;
+			self::$obj = new MyRajaOngkir;
 		}
 
 		return self::$obj;
