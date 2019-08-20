@@ -4,6 +4,7 @@ namespace MyRajaOngkir;
 
 use MyRajaOngkir\App\Provinsi;
 use MyRajaOngkir\App\Kota;
+use MyRajaOngkir\App\Kecamatan;
 use MyRajaOngkir\App\Cost;
 
 class MyRajaOngkir {
@@ -29,6 +30,10 @@ class MyRajaOngkir {
 
 	public function Kota(){
 		return new Kota;
+	}
+	
+	public function Kecamatan(){
+		return new Kecamatan;
 	}
 
 	public function Cost($attributes){
